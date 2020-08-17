@@ -1,28 +1,156 @@
-body{
+/**Общие стили*/
+html{
     font-family: "Roboto", sans-serif;
+    min-width: 320px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    color: #252525;
 }
+h1{
+
+}
+h2{
+font-size: 30px;
+font-weight: 850;
+}
+h3{
+    font-size: 30px;
+    font-weight: 950;
+
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+/**Шрифты*/
+
 @font-face{
     font-family: "Roboto";
-    src: url("../roboto/Roboto-Regular.ttf");
+    src: url("../roboto/Robotobolditalic.woff2");
+    font-weight: 700;
     format:("truetype");
-    font-weight: 400;
 }
 @font-face{
     font-family: "Roboto";
-    src: url("../roboto/Roboto-Bold.ttf");
+    src: url("../roboto/Robotomedium.woff");
     format:("truetype");
     font-weight: 700;
 }
 
-.conteiner {
+.container {
     max-width: 1030px;
     margin: 0 auto;
+    padding-top: 20px;
 }
+.block1__col2{
+    float: left;
+}
+.text_right{
+float: left;
+}
+
+
+
+
+.block1__main{
+    padding: 180px 0 180px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+
+.block1{
+    background:url(../img/Fon1.jpg) no-repeat top center/cover;
+    min-height: 100vh;
+}
+.block1__col1 img{
+    background: #252525;
+}
+.block1__nav li{
+    display: inline-block;
+}
+.block1__nav li+li{
+    margin-left: 44px;
+}
+.block1__nav a{
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: 0.2s;
+    float: left;
+}
+.block1__nav a:hover{
+    color:red;
+}
+.block02__header{
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 75px;
+}
+.block02__info{
+    position: absolute;
+    box-shadow: 0 0 15px;
+    width: 500px;
+    top: 0;
+    right: 0;
+    background: #fff;
+    padding: 40px 30px;
+    top: -200px;
+    
+}
+.block02__inner{
+    position: relative;
+    
+}
+
+
+.block02__pluses{
+    overflow: hidden;
+    margin: 0 -15px;
+}
+
+.block02__plus{
+    display: inline-block;
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0 15px;
+    
+}
+.block2__image-wrap{
+    text-align: center;
+    max-width: 280px;
+    margin-left: 75px;
+    z-index: 1;
+}
+
+.simple-text{
+    font-size: 18px;
+    text-align: center;
+}
+.clear{
+   clear: both;
+}
+.block02__image-wrap{
+    min-height: 210px;
+}
+.block02__image-wrap img{
+    max-width: 100%;
+    min-height: 100%;
+
+}
+
+
 .movie-list__header {
     color: #252525;
     text-align: center;
     font-weight: 700;
-    margin: 0 auto 90px;
+    margin: 40px auto 90px;
     font-size: 50px;
 }
 .movie-list__table{
@@ -69,3 +197,7 @@ a{
     color: #fff;
     text-decoration: none;
 }
+.section{
+    max-width: 1030px;
+}
+
