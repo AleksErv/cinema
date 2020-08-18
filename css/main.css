@@ -1,6 +1,6 @@
 /**Общие стили*/
 html{
-    font-family: "Roboto", sans-serif;
+    font-family: "RobotoLight", Arial, Helvetica, sans-serif;
     min-width: 320px;
     max-width: 1920px;
     margin-left: auto;
@@ -44,11 +44,24 @@ h3{
     margin: 0 auto;
     padding-top: 20px;
 }
+.block1__row{
+    display: inline;
+    box-sizing: border-box;
+
+}
+.block1__col1{
+    float: left;
+    display: inline;
+}
 .block1__col2{
+    display: inline;
     float: left;
 }
-.text_right{
-float: left;
+
+.block1_col3.text__right{
+    padding: 20px 0 0 20px;
+    display: inline;
+    text-align: center;
 }
 
 
@@ -66,25 +79,38 @@ float: left;
     min-height: 100vh;
 }
 .block1__col1 img{
-    background: #252525;
+background: transparent;
+}
+.ul{
+    display: inline;
 }
 .block1__nav li{
-    display: inline-block;
+ display: inline;
 }
+
 .block1__nav li+li{
     margin-left: 44px;
 }
-.block1__nav a{
+.nav{
+    padding-right: 30px;
     font-size: 15px;
     color: #fff;
     text-transform: uppercase;
     font-weight: 300;
     transition: 0.2s;
-    float: left;
+    display: inline;
+}
+.block1__nav.text__right{
+    padding-right: 50px;
+}
+span{
+    padding-top: 20px;
+    color: #FFF;
 }
 .block1__nav a:hover{
     color:red;
 }
+
 .block02__header{
     font-size: 40px;
     font-weight: 700;
@@ -92,6 +118,11 @@ float: left;
     padding-bottom: 50px;
     padding-left: 75px;
 }
+
+.block02__inner{
+    position: relative;
+}
+
 .block02__info{
     position: absolute;
     box-shadow: 0 0 15px;
@@ -100,14 +131,12 @@ float: left;
     right: 0;
     background: #fff;
     padding: 40px 30px;
-    top: -200px;
-    
+    top: -170px;
 }
-.block02__inner{
-    position: relative;
-    
+.block02_text1{
+    padding-top: 25px;
+    padding-bottom: 10px;
 }
-
 
 .block02__pluses{
     overflow: hidden;
@@ -161,7 +190,7 @@ float: left;
     overflow: hidden;
 
 }
-.movie-list__table th {
+.movie-list__table th{
     color: #fff;
     background: #a3cc40;
     font-size: 30px;
@@ -189,6 +218,9 @@ float: left;
     width: 670px;
     padding-left: 65px;
 }
+.table_block2 a{
+    float: left;
+}
 .table_block3{
     width: 130px;
     text-align: center;
@@ -197,7 +229,43 @@ a{
     color: #fff;
     text-decoration: none;
 }
+.block3__text-table{
+    margin: 0 auto;
+    max-width: 830px;
+    text-align: center;
+    padding-top: 40px;
+    font-family: "roboto" serif;
+}
+
 .section{
     max-width: 1030px;
 }
+.block3__tri{
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+   }
+   .block3__tri::after {
+    content: ''; 
+    position: absolute;
+    left: 20px; bottom: 20px; 
+    border: 10px solid transparent;
+    border-top: 10px solid #FFF;
+    float: left;
+   }
 
+  .block3__tri1{
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+  }
+
+  .block3__tri1::after{
+      content: "";
+      position: absolute;
+      left: 20px;bottom: 20px;
+      border: 10px solid transparent;
+      border-top: 10px solid #FFF;
+  }
