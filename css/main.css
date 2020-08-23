@@ -38,7 +38,7 @@ h3{
     format:("truetype");
     font-weight: 700;
 }
-
+/**блок №1*/
 .container {
     max-width: 1030px;
     margin: 0 auto;
@@ -63,7 +63,10 @@ h3{
     display: inline;
     text-align: center;
 }
+p{
+    padding-top: 15px;
 
+}
 
 
 
@@ -77,6 +80,16 @@ h3{
 .block1{
     background:url(../img/Fon1.jpg) no-repeat top center/cover;
     min-height: 100vh;
+    position: relative;
+}
+.block1::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    
 }
 .block1__col1 img{
 background: transparent;
@@ -110,6 +123,7 @@ span{
 .block1__nav a:hover{
     color:red;
 }
+/**блок №2*/
 
 .block02__header{
     font-size: 40px;
@@ -132,6 +146,8 @@ span{
     background: #fff;
     padding: 40px 30px;
     top: -170px;
+    height: 300px;
+    width: 580px;
 }
 .block02_text1{
     padding-top: 25px;
@@ -151,13 +167,6 @@ span{
     padding: 0 15px;
     
 }
-.block2__image-wrap{
-    text-align: center;
-    max-width: 280px;
-    margin-left: 75px;
-    z-index: 1;
-}
-
 .simple-text{
     font-size: 18px;
     text-align: center;
@@ -167,6 +176,10 @@ span{
 }
 .block02__image-wrap{
     min-height: 210px;
+    text-align: center;
+    max-width: 280px;
+    margin-left: 75px;
+    z-index: 1;
 }
 .block02__image-wrap img{
     max-width: 100%;
@@ -174,7 +187,7 @@ span{
 
 }
 
-
+/**блок №3*/
 .movie-list__header {
     color: #252525;
     text-align: center;
@@ -269,3 +282,143 @@ a{
       border: 10px solid transparent;
       border-top: 10px solid #FFF;
   }
+   /**блок №4*/
+.block04{
+    background: url(../img/fon2.jpg) no-repeat top center/cover;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+.block04__logo img{
+    border-radius: 100%;
+}
+
+.block04__text-wrap.text-rigth{
+    text-align: right;
+    color: #fff;
+}
+.header.block04__header{
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+.simple-text.block04__text1{
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+
+
+.button {
+    display: inline-block; /* строчно-блочный */
+    height: 55px;
+    margin: 30px 30px; /* отступы от края браузера */
+    padding: 20px 60px; /* расстояние от текста до края кнопки */
+    background-color: #90d23d; /* цвет кнопки  */
+    border-radius: 5px; /* скругление углов */
+    font-size: 18px; /* размер шрифта */
+    text-decoration: none; /* не подчеркивать ссылку */
+    transition: 0.2s; /* плавный ховер эффект */
+    color: #f7f8e8; /* цвет текста на кнопке */
+    border: 1px solid #f7f8e8 ;
+  }
+  
+  .button:hover {
+    background-color: transparent; /* замена цвета кнопки при наведении */
+    }
+
+  /**блок №5*/
+
+  .block05__header{
+      font-size: 50px;
+      font-weight: 900;
+      padding-left: 15px;
+  }
+  .simple-text.block05__text{
+      color: #000;
+      font-size: 14px;
+      text-align: left;
+      width: 670px;
+  }
+  .block05__inner{
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .block05__inner td{
+      
+  }
+  .block05__relative {
+    position: relative;
+    border-radius: 20px;
+      
+  }
+  .block05__movi1 {
+    padding: 23px;
+  }
+  
+  .block05__descr {
+    position: absolute;
+    background-color: rgb(144, 210, 61, .5);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 20px;
+    transform: translateY(100%);
+    transition: .2s;
+  }
+  .block05__relative:hover .block05__descr{
+      transform: translateY(0%);
+  }
+
+  .block05__descr img{
+    display: block;
+  }
+  
+  .block05__text{
+      font-size: 35px;
+      color: #fff;
+      font-weight: 700;
+      padding: 20px 0 10px 20px;
+  }
+  .block05__text3{
+      position: relative;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      padding-left: 20px ;
+  }
+  .block05__sep{
+      background: #fff;
+      width: 84px;
+      height: 6px;
+      margin: 20px 0 20px 20px;
+  }
+
+  .block05__linls {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+  }
+.block05__linls a{
+    display: inline-block;
+}
+.simple-text.block05__text{
+    padding-bottom: 44px;
+}
+
+/**Футер подвал*/
+.container__footer{
+    padding-top: 40px;
+}
+.content{
+    background: #90d23d;
+}
+.contacts{
+    padding: 20px;
+    text-align: center;
+}
+.prava{
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
