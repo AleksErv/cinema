@@ -28,6 +28,9 @@ html{
     font-weight: 700;
 }
 /**блок №1*/
+.block1{
+    height: 45rem;
+}
 .container {
     max-width: 53rem;
     margin: 0 auto;
@@ -214,19 +217,19 @@ span{
     background: #a3cc40;
     font-size: 1.5rem;
     font-weight: 700;
-    height: 3.75rem;
+    height: 4.5rem;
 }
 .one{
     font-size: 1.05rem;
     color: #fff;
     background: #373737;
-    height: 3.75rem;
+    height: 4.5rem;
 }
 .two{
     font-size: 1.05rem;
     color: #fff;
     background:#4b4d4f;
-    height: 3.75rem;
+    height: 4.5rem;
 }
 .table_block1{
     width: 11.5rem;
