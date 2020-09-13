@@ -1,6 +1,6 @@
 /**Общие стили*/
 html{
-    font-family: "RobotoLight", Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     min-width: 320px;
     max-width: 1920px;
     margin-left: auto;
@@ -13,29 +13,48 @@ html{
     box-sizing: inherit;
 }
 
+
 /**Шрифты*/
 
 @font-face{
     font-family: "Roboto";
-    src: url("../roboto/Robotobolditalic.woff2");
+    src: url("fonts/roboto/Robotobolditalic.woff2");
     font-weight: 700;
     format:("truetype");
 }
 @font-face{
-    font-family: "Roboto";
-    src: url("../roboto/Robotomedium.woff");
-    format:("truetype");
-    font-weight: 700;
+    font-family: "Robotomedium";
+    src: url("/fonts/roboto/Robotomedium.woff2") format("woff2"), url("/fonts/roboto/Robotomedium.woff") format("woff"), url("/fonts/roboto/Robotomedium.ttf") format:("ttf");
+    font-weight: 100;
 }
+@font-face{
+    font-family: "Robotothin";
+    src: url(/fonts/roboto/Robotothin.woff);
+    format: ("truetype");
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/roboto/Robotothin.woff2') format('woff2'), url('/fonts/roboto/Robotothin.woff') format('woff'), url('/fonts/roboto/Robotothinitalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('/fonts/roboto/3966.ttf') format('ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
 /**блок №1*/
-.block1{
-    height: 45rem;
-}
 .container {
     max-width: 53rem;
     margin: 0 auto;
     padding-top: 1rem;
+    position: relative;
 }
+
+
 .block1__row{
     display: inline;
     box-sizing: border-box;
@@ -44,10 +63,13 @@ html{
 .block1__col1{
     float: left;
     display: inline;
+    z-index: 2;
 }
 .block1__col2{
+    padding-left: 216px;
     display: inline;
     float: left;
+    z-index: 2;
 }
 
 .block1_col3.text__right{
@@ -61,7 +83,7 @@ p{
 }
 
 .block1__main{
-    padding: 9rem 0 9rem 0;
+    padding: 5rem 0 5rem 0;
     text-align: center;
     color: #fff;
     
@@ -75,9 +97,8 @@ p{
     font-weight: 100;
 }
 
-
-
 .block1{
+    overflow: hidden;
     background:url(../img/Fon1.jpg) no-repeat top center/cover;
     min-height: 100vh;
     position: relative;
@@ -88,25 +109,31 @@ p{
     position: absolute;
     bottom: 0;
     left: 0;
-    border-top: 50px solid transparent;
-    border-right: 100vw solid #fff;
-    width: 0;
-    height: 0; 
+    border-left: 100vw solid transparent;
+    border-bottom: 6.55rem solid #fff;
 }
+.block1::before{
+    content:"";
+    background: rgb(00, 00, 00, .5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
 .block1__col1 img{
 background: transparent;
 }
-.ul{
-    display: inline;
-    font-size: .75rem;
-}
 .block1__nav li{
+    font-size: .75rem;
  display: inline;
+ text-transform: uppercase;
+
+}
+.block1__nav li+li{
+    padding-left: 40px;
 }
 
-.block1__nav li+li{
-    margin-left: 2.1rem;
-}
+
 .nav{
     padding-right: 1.5rem;
     font-size: .75rem;
@@ -116,10 +143,6 @@ background: transparent;
     transition: 0.2s;
     display: inline;
 }
-.block1__nav.text__right{
-    padding-right: 2.5rem;
-    font-size: .75rem;
-}
 
 span{
     padding-top: 1rem;
@@ -127,20 +150,23 @@ span{
     font-style: 0.75rem;
 }
 .block1__nav a:hover{
-    color:red;
+    color:#90d23d ;
+    border-bottom: 1px solid #90d23d;
 }
 /**блок №2*/
-
+.block02{
+    position: relative;
+}
 .block02__header{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     padding-top: 2.5rem;
     padding-bottom: ;
-    padding-left: 3.75rem;
 }
 
 .block02__inner{
     position: relative;
+    padding-right: 2rem;
 }
 
 .block02__info{
@@ -151,30 +177,44 @@ span{
     right: 0;
     background: #fff;
     padding: 2rem 1.5rem;
-    top: -8.5rem;
-    height: 13rem;
-    width: 29.5rem;
+    top: -8.7rem;
+    right: -2.1rem;
+    height: 14.45rem;
+    width: 28.5rem;
+    margin-left: 40px;
+    margin-bottom: 40px;
 }
 .header.block02__header{
     margin-bottom: 4rem;
 }
+.block02__info h2{
+    font-size: 2rem;
+}
+
 .block02_text1{
     padding-top: 1.25rem;
     padding-bottom: .5rem;
 }
+.block02_text2{
+    padding-bottom: .5rem;
+
+}
 
 .block02__pluses{
     overflow: hidden;
-    margin: 0 -.75rem;
+    padding-top: 5rem;
 }
 
 .block02__plus{
-    display: inline-block;
     width: 33.33%;
     float: left;
     text-align: center;
     padding: 0 .75rem;
     
+}
+.block02__text3{
+    margin-top: 20px;
+    font-size: 1.75rem;
 }
 .simple-text{
     font-size: .9rem;
@@ -184,16 +224,18 @@ span{
    clear: both;
 }
 .block02__image-wrap{
-    min-height: 10.5rem;
-    text-align: center;
-    max-width: 14rem;
-    margin-left: 3.75rem;
-    z-index: 1;
+    transition: .1s;
 }
-.block02__image-wrap img{
-    max-width: 100%;
-    min-height: 100%;
 
+.block02__image-wrap img{
+    min-height: 10.5rem;
+    max-width: 100%;
+    transition: .1s;     
+
+}
+.block02__image-wrap img:hover{
+    max-width: 107%;
+    transform: scale(1.07);
 }
 
 /**блок №3*/
@@ -201,10 +243,11 @@ span{
     color: #252525;
     text-align: center;
     font-weight: 700;
-    margin: 2rem auto 4.5rem;
+    margin: 3rem auto 4.5rem;
     font-size: 2.5rem;
 }
 .movie-list__table{
+    font-family: "Roboto Regular", serif;
     width: 100%;
     border-collapse: collapse;
     border-radius: 15px;
@@ -294,12 +337,34 @@ a{
       border: .5rem solid transparent;
       border-top: .5rem solid #FFF;
   }
+
+  /**priz*/
+.priz{
+    position: relative;
+    }
+    .priz__logo{
+    max-width: 64.37rem;
+    margin: 0 auto;
+    position: relative;
+    }
+
+.priz__logo img{
+    position: absolute;
+    z-index: 2;
+    border-radius: 100%;
+    left: 2.5rem;
+    width: 15rem;
+    box-shadow: .5rem .5rem .5rem  #000;
+    }
+
    /**блок №4*/
+
 .block04{
     background: url(../img/fon2.jpg) no-repeat top center/cover;
     margin: 0 auto;
     min-height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 .block04::before{
     content: "";
@@ -307,10 +372,9 @@ a{
     position: absolute;
     top: 0;
     right: 0;
+    border-top: 5rem solid #fff;
     border-right: 100vw solid transparent;
-    border-top: 2.5rem solid #fff;
-    width: 0;
-    height: 0; 
+    z-index: 1;
 
 }
 .block04::after{
@@ -319,28 +383,21 @@ a{
     position: absolute;
     bottom: 0;
     left: 0;
-    border-top: 2.5rem solid transparent;
+    border-top: 5rem solid transparent;
     border-right: 100vw solid #fff;
-    width: 0;
-    height: 0; 
 }
-.block04__inner{
-    position: relative;
-}
-.block04__logo{
+.block04__bg{
+    background: rgb(000, 000, 00, .5);
+    width: 100%;
+    height: 100%;
     position: absolute;
-    box-shadow: .5rem .5rem .5rem  #000;
-
-}
-.block04__logo img{
-    border-radius: 100%;
-    margin-top: -7rem;
 }
 
 .block04__text-wrap.text-rigth{
     text-align: right;
     color: #fff;
-    margin: 5rem 0 0 0;
+    float: right;
+    width: 40rem;
 }
 .header.block04__header{
     font-size: 2.5rem;
@@ -389,16 +446,29 @@ a{
     width: 100%;
     border-collapse: collapse;
   }
-  .block05__inner td{
-      
+  
+  .block05__movi1{
+    width: 352px;
+    height: 350px;
+    padding: 1.25rem;
+    overflow: hidden;
   }
   .block05__relative {
     position: relative;
     border-radius: 1rem;
-      
+      width: 100%;
+      height: 100%;
   }
-  .block05__movi1 {
-    padding: 1.25rem;
+
+  .block05__bg{
+      width: 100%;
+      height: 100%;
+  }
+  .block05__bg img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000;
   }
   
   .block05__descr {
@@ -409,15 +479,15 @@ a{
     top: 0;
     bottom: 0;
     border-radius: 1rem;
-    transform: translateY(100%);
+    transform: translateY(110%);
     transition: .2s;
+    width: 100%;
+    height: 100%;
   }
   .block05__relative:hover .block05__descr{
       transform: translateY(0%);
-  }
-
-  .block05__descr img{
-    display: block;
+      width: 100%;
+      height: 100%;
   }
   
   .block05__text{
