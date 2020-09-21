@@ -1,5 +1,6 @@
 /**Общие стили*/
-html{
+
+html {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     min-width: 320px;
     max-width: 1920px;
@@ -9,36 +10,43 @@ html{
     color: #252525;
     font-size: 20px;
 }
-*,*:before,*:after{
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
 
 /**Шрифты*/
 
-@font-face{
+@font-face {
     font-family: "Roboto";
     src: url("fonts/roboto/Robotobolditalic.woff2");
     font-weight: 700;
-    format:("truetype");
+    format: ("truetype");
 }
-@font-face{
+
+@font-face {
     font-family: "Robotomedium";
-    src: url("/fonts/roboto/Robotomedium.woff2") format("woff2"), url("/fonts/roboto/Robotomedium.woff") format("woff"), url("/fonts/roboto/Robotomedium.ttf") format:("ttf");
+    src: url("/fonts/roboto/Robotomedium.woff2") format("woff2"), url("/fonts/roboto/Robotomedium.woff") format("woff"), url("/fonts/roboto/Robotomedium.ttf") format: ("ttf");
     font-weight: 100;
 }
-@font-face{
+
+@font-face {
     font-family: "Robotothin";
     src: url(/fonts/roboto/Robotothin.woff);
     format: ("truetype");
     font-weight: 100;
 }
+
 @font-face {
     font-family: 'Roboto';
     src: url('/fonts/roboto/Robotothin.woff2') format('woff2'), url('/fonts/roboto/Robotothin.woff') format('woff'), url('/fonts/roboto/Robotothinitalic.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Roboto Regular';
     src: url('/fonts/roboto/3966.ttf') format('ttf');
@@ -46,7 +54,9 @@ html{
     font-style: normal;
 }
 
+
 /**блок №1*/
+
 .container {
     max-width: 53rem;
     margin: 0 auto;
@@ -54,56 +64,59 @@ html{
     position: relative;
 }
 
-
-.block1__row{
+.block1__row {
     display: inline;
     box-sizing: border-box;
-
 }
-.block1__col1{
+
+.block1__col1 {
     float: left;
     display: inline;
     z-index: 2;
 }
-.block1__col2{
+
+.block1__col2 {
     padding-left: 216px;
     display: inline;
     float: left;
     z-index: 2;
 }
 
-.block1_col3.text__right{
+.block1_col3.text__right {
     padding: 1rem 0 0 1rem;
     display: inline;
     text-align: center;
 }
-p{
+
+p {
     padding-top: .75rem;
     font-size: .75rem;
 }
 
-.block1__main{
+.block1__main {
     padding: 5rem 0 5rem 0;
     text-align: center;
     color: #fff;
-    
 }
-.block1__h1.text-center{
+
+.block1__h1.text-center {
     font-size: 4rem;
     font-weight: 100;
 }
-.block__h2.text-center{
+
+.block__h2.text-center {
     font-size: 2.5rem;
     font-weight: 100;
 }
 
-.block1{
+.block1 {
     overflow: hidden;
-    background:url(../img/Fon1.jpg) no-repeat top center/cover;
+    background: url(../img/Fon1.jpg) no-repeat top center/cover;
     min-height: 100vh;
     position: relative;
 }
-.block1::after{
+
+.block1::after {
     content: "";
     display: block;
     position: absolute;
@@ -112,29 +125,30 @@ p{
     border-left: 100vw solid transparent;
     border-bottom: 6.55rem solid #fff;
 }
-.block1::before{
-    content:"";
+
+.block1::before {
+    content: "";
     background: rgb(00, 00, 00, .5);
     position: absolute;
     height: 100%;
     width: 100%;
 }
 
-.block1__col1 img{
-background: transparent;
+.block1__col1 img {
+    background: transparent;
 }
-.block1__nav li{
-    font-size: .75rem;
- display: inline;
- text-transform: uppercase;
 
+.block1__nav li {
+    font-size: .75rem;
+    display: inline;
+    text-transform: uppercase;
 }
-.block1__nav li+li{
+
+.block1__nav li+li {
     padding-left: 40px;
 }
 
-
-.nav{
+.nav {
     padding-right: 1.5rem;
     font-size: .75rem;
     color: #fff;
@@ -144,37 +158,38 @@ background: transparent;
     display: inline;
 }
 
-span{
+span {
     padding-top: 1rem;
     color: #FFF;
     font-style: 0.75rem;
 }
-.block1__nav a:hover{
-    color:#90d23d ;
+
+.block1__nav a:hover {
+    color: #90d23d;
     border-bottom: 1px solid #90d23d;
 }
+
+
 /**блок №2*/
-.block02{
+
+.block02 {
     position: relative;
 }
-.block02__header{
+
+.block02__header {
     font-size: 2.5rem;
     font-weight: 700;
     padding-top: 2.5rem;
-    padding-bottom: ;
 }
 
-.block02__inner{
+.block02__inner {
     position: relative;
-    padding-right: 2rem;
+    padding: 0 .75rem;
 }
 
-.block02__info{
+.block02__info {
     position: absolute;
     box-shadow: 0 0 .75rem;
-    width: 25rem;
-    top: 0;
-    right: 0;
     background: #fff;
     padding: 2rem 1.5rem;
     top: -8.7rem;
@@ -184,61 +199,79 @@ span{
     margin-left: 40px;
     margin-bottom: 40px;
 }
-.header.block02__header{
+
+@media (max-width: 1180px) {
+    .block02__info {
+        right: 3rem;
+    }
+}
+
+.header.block02__header {
     margin-bottom: 4rem;
 }
-.block02__info h2{
+
+.block02__info h2 {
     font-size: 2rem;
 }
 
-.block02_text1{
+.block02_text1 {
     padding-top: 1.25rem;
     padding-bottom: .5rem;
 }
-.block02_text2{
-    padding-bottom: .5rem;
 
+.block02_text2 {
+    padding-bottom: .5rem;
 }
 
-.block02__pluses{
+.block02__pluses {
     overflow: hidden;
     padding-top: 5rem;
+    display: flex;
+    justify-content: space-around;
 }
 
-.block02__plus{
-    width: 33.33%;
-    float: left;
-    text-align: center;
+.block02__plus {
     padding: 0 .75rem;
-    
+    display: flex;
+    justify-content: center;
+    flex: 0 0 33%;
 }
-.block02__text3{
+
+.block02__text3 {
     margin-top: 20px;
     font-size: 1.75rem;
 }
-.simple-text{
+
+.simple-text {
     font-size: .9rem;
     text-align: center;
 }
-.clear{
-   clear: both;
+
+.clear {
+    clear: both;
 }
-.block02__image-wrap{
+
+.block02__image-wrap {
+    transition: .1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block02__image-wrap img {
+    min-height: 10.5rem;
+    max-width: 100%;
     transition: .1s;
 }
 
-.block02__image-wrap img{
-    min-height: 10.5rem;
-    max-width: 100%;
-    transition: .1s;     
-
-}
-.block02__image-wrap img:hover{
+.block02__image-wrap img:hover {
     max-width: 107%;
     transform: scale(1.07);
 }
 
+
 /**блок №3*/
+
 .movie-list__header {
     color: #252525;
     text-align: center;
@@ -246,55 +279,63 @@ span{
     margin: 3rem auto 4.5rem;
     font-size: 2.5rem;
 }
-.movie-list__table{
+
+.movie-list__table {
     font-family: "Roboto Regular", serif;
     width: 100%;
     border-collapse: collapse;
     border-radius: 15px;
     border: grey solid 1px;
     overflow: hidden;
-
 }
-.movie-list__table th{
+
+.movie-list__table th {
     color: #fff;
     background: #a3cc40;
     font-size: 1.5rem;
     font-weight: 700;
     height: 4.5rem;
 }
-.one{
+
+.one {
     font-size: 1.05rem;
     color: #fff;
     background: #373737;
     height: 4.5rem;
 }
-.two{
+
+.two {
     font-size: 1.05rem;
     color: #fff;
-    background:#4b4d4f;
+    background: #4b4d4f;
     height: 4.5rem;
 }
-.table_block1{
+
+.table_block1 {
     width: 11.5rem;
     text-align: center;
-
 }
-.table_block2{
+
+.table_block2 {
     width: 33.5rem;
     padding-left: 3.25rem;
 }
-.table_block2 a{
+
+.table_block2 a {
     float: left;
 }
-.table_block3{
+
+.table_block3 {
     width: 6.5rem;
     text-align: center;
 }
-a{
+
+a {
     color: #fff;
     text-decoration: none;
 }
-.block3__text-table{
+
+.block3__text-table {
     margin: 0 auto;
     max-width: 41.5rem;
     text-align: center;
@@ -305,68 +346,77 @@ a{
     margin-bottom: 8rem;
 }
 
-.section{
+.section {
     max-width: 53rem;
 }
-.block3__tri{
+
+.block3__tri {
     border-radius: .5rem;
     padding: 1rem;
     position: relative;
     color: #fff;
-   }
-   .block3__tri::after {
-    content: ''; 
+}
+
+.block3__tri::after {
+    content: '';
     position: absolute;
-    left: 1rem; bottom: 1rem; 
+    left: 1rem;
+    bottom: 1rem;
     border: 10px solid transparent;
     border-top: .5rem solid #FFF;
     float: left;
-   }
+}
 
-  .block3__tri1{
+.block3__tri1 {
     border-radius: .5rem;
     padding: 1rem;
     position: relative;
     color: #fff;
-  }
+}
 
-  .block3__tri1::after{
-      content: "";
-      position: absolute;
-      left: 1rem;bottom: 1rem;
-      border: .5rem solid transparent;
-      border-top: .5rem solid #FFF;
-  }
+.block3__tri1::after {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    border: .5rem solid transparent;
+    border-top: .5rem solid #FFF;
+}
 
-  /**priz*/
-.priz{
+
+/**priz*/
+
+.priz {
     position: relative;
-    }
-    .priz__logo{
+}
+
+.priz__logo {
     max-width: 64.37rem;
     margin: 0 auto;
     position: relative;
-    }
+}
 
-.priz__logo img{
+.priz__logo img {
     position: absolute;
     z-index: 2;
     border-radius: 100%;
     left: 2.5rem;
     width: 15rem;
-    box-shadow: .5rem .5rem .5rem  #000;
-    }
+    box-shadow: .5rem .5rem .5rem #000;
+}
 
-   /**блок №4*/
 
-.block04{
+/**блок №4*/
+
+.block04 {
     background: url(../img/fon2.jpg) no-repeat top center/cover;
     margin: 0 auto;
     min-height: 100vh;
     position: relative;
     overflow: hidden;
 }
-.block04::before{
+
+.block04::before {
     content: "";
     display: block;
     position: absolute;
@@ -375,9 +425,9 @@ a{
     border-top: 5rem solid #fff;
     border-right: 100vw solid transparent;
     z-index: 1;
-
 }
-.block04::after{
+
+.block04::after {
     content: "";
     display: block;
     position: absolute;
@@ -386,92 +436,110 @@ a{
     border-top: 5rem solid transparent;
     border-right: 100vw solid #fff;
 }
-.block04__bg{
+
+.block04__bg {
     background: rgb(000, 000, 00, .5);
     width: 100%;
     height: 100%;
     position: absolute;
 }
 
-.block04__text-wrap.text-rigth{
+.block04__text-wrap.text-rigth {
     text-align: right;
     color: #fff;
     float: right;
     width: 40rem;
 }
-.header.block04__header{
+
+.header.block04__header {
     font-size: 2.5rem;
     margin-bottom: 3rem;
 }
-.simple-text.block04__text1{
+
+.simple-text.block04__text1 {
     font-size: .75rem;
     margin-bottom: 1rem;
     text-align: right;
 }
 
-
-
 .button {
-    display: inline-block; /* строчно-блочный */
+    display: inline-block;
+    /* строчно-блочный */
     height: 2.75rem;
-    margin: 1.5rem 1/5rem; /* отступы от края браузера */
-    padding: 1rem 3rem; /* расстояние от текста до края кнопки */
-    background-color: #90d23d; /* цвет кнопки  */
-    border-radius: .25rem; /* скругление углов */
-    font-size: 1rem; /* размер шрифта */
-    text-decoration: none; /* не подчеркивать ссылку */
-    transition: 0.2s; /* плавный ховер эффект */
-    color: #f7f8e8; /* цвет текста на кнопке */
-    border: 1px solid #f7f8e8 ;
-  }
-  
-  .button:hover {
-    background-color: transparent; /* замена цвета кнопки при наведении */
-    }
+    margin: 1.5rem 1/5rem;
+    /* отступы от края браузера */
+    padding: 1rem 3rem;
+    /* расстояние от текста до края кнопки */
+    background-color: #90d23d;
+    /* цвет кнопки  */
+    border-radius: .25rem;
+    /* скругление углов */
+    font-size: 1rem;
+    /* размер шрифта */
+    text-decoration: none;
+    /* не подчеркивать ссылку */
+    transition: 0.2s;
+    /* плавный ховер эффект */
+    color: #f7f8e8;
+    /* цвет текста на кнопке */
+    border: 1px solid #f7f8e8;
+}
 
-  /**блок №5*/
+.button:hover {
+    background-color: transparent;
+    /* замена цвета кнопки при наведении */
+}
 
-  .block05__header{
-      font-size: 2.5rem;
-      font-weight: 900;
-      padding-left: .75rem;
-  }
-  .simple-text.block05__text{
-      color: #000;
-      font-size: .75rem;
-      text-align: left;
-      width: 33.5rem;
-  }
-  .block05__inner{
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .block05__movi1{
-    width: 352px;
-    height: 350px;
+
+/**блок №5*/
+
+.block05__header {
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding-left: .75rem;
+}
+
+.simple-text.block05__text {
+    color: #000;
+    font-size: .75rem;
+    text-align: left;
+    width: 33.5rem;
+}
+
+.block05__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block05__plitka {
+    flex: 1 0 0;
+}
+
+.block05__movi1 {
     padding: 1.25rem;
     overflow: hidden;
-  }
-  .block05__relative {
+}
+
+.block05__relative {
     position: relative;
     border-radius: 1rem;
-      width: 100%;
-      height: 100%;
-  }
+    width: 100%;
+    height: 100%;
+}
 
-  .block05__bg{
-      width: 100%;
-      height: 100%;
-  }
-  .block05__bg img{
+.block05__bg {
+    width: 100%;
+    height: 100%;
+}
+
+.block05__bg img {
     display: block;
     width: 100%;
     height: 100%;
     background: #000;
-  }
-  
-  .block05__descr {
+}
+
+.block05__descr {
     position: absolute;
     background-color: rgb(144, 210, 61, .5);
     left: 0;
@@ -483,57 +551,72 @@ a{
     transition: .2s;
     width: 100%;
     height: 100%;
-  }
-  .block05__relative:hover .block05__descr{
-      transform: translateY(0%);
-      width: 100%;
-      height: 100%;
-  }
-  
-  .block05__text{
-      font-size: 1.75rem;
-      color: #fff;
-      font-weight: 700;
-      padding: 1rem 0 .5rem 1rem;
-  }
-  .block05__text3{
-      position: relative;
-      font-size: 1rem;
-      color: #fff;
-      font-weight: 500;
-      padding-left: 1rem;
-  }
-  .block05__sep{
-      background: #fff;
-      width: 4.25rem;
-      height: .25rem;
-      margin: 1rem 0 1rem 1rem;
-  }
+}
 
-  .block05__linls {
+.block05__relative:hover .block05__descr {
+    transform: translateY(0%);
+    width: 100%;
+    height: 100%;
+}
+
+.block05__text {
+    font-size: 1.75rem;
+    color: #fff;
+    font-weight: 700;
+    padding: 1rem 0 .5rem 1rem;
+}
+
+.block05__text3 {
+    position: relative;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+    padding-left: 1rem;
+}
+
+.block05__sep {
+    background: #fff;
+    width: 4.25rem;
+    height: .25rem;
+    margin: 1rem 0 1rem 1rem;
+}
+
+.block05__linls {
     position: absolute;
     bottom: 1.25rem;
     left: 1.25rem;
-  }
-.block05__linls a{
+}
+
+.block05__linls a {
     display: inline-block;
 }
-.simple-text.block05__text{
+
+.simple-text.block05__text {
     padding-bottom: 2.25rem;
 }
 
+
 /**Футер подвал*/
-.container__footer{
+
+.container__footer {
     padding-top: 2rem;
 }
-.content{
+
+.content {
     background: #90d23d;
+    position: relative;
 }
-.contacts{
+
+.contacts {
     padding: 1rem;
     text-align: center;
 }
-.prava{
+
+.contacts img {
+    background: rgb(000, 000, 00, .8);
+}
+
+.prava {
     padding: .5rem;
     text-align: center;
     font-size: .9rem;
