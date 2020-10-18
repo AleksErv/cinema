@@ -621,3 +621,20 @@ a {
     text-align: center;
     font-size: .9rem;
 }
+
+div.owl-nav>button.owl-next>span {
+    position: absolute;
+    font-size: 75px;
+    color: rgb(144, 210, 61, .5);
+    top: 25%;
+    right: -30px;
+}
+
+div.owl-nav>button.owl-prev.disabled>span {
+    position: absolute;
+    font-size: 75px;
+    color: rgb(144, 210, 61, .5);
+    top: 25%;
+    left: -30px;
+    z-index: 100;
+}
